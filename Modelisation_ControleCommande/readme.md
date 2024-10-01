@@ -1,36 +1,16 @@
-# Modélisation et simulation dynamique
+# Modélisation et contrôle/commande
 
-Enseignant référent : Bruno Denis
 
 ## Modélisation dynamique
 
 ![Modèle dynamique](img/modele_dynamique.png)
 
-Étudiants (4):
 
-- Loïs Otalora - lois.otalora@ens-paris-saclay.fr
-- Noah Tournier - noah.tournier@ens-paris-saclay.fr
-- Léo-Paul Dewaele - 	leo-paul.dewaele@ens-paris-saclay.fr
-- Bastien Jacques - bastien.jacques@ens-paris-saclay.fr
+**objectif** : établir un modèle de la dynamique du ballon (toutes les hypothèses ajoutées devront être étayées). Les nombreux paramètres du modèle devront être évalués (par mesure, par identification, ...). En relation avec le thème "système propulsif et directif" il faudra valider que le ballon sera contrôlable, c'est-à-dire qu'il existe une poussée applicable pour assurer le vol.
 
-**objectif** : établir un modèle de la dynamique du ballon (toutes les hypothèses ajoutées devront être étayées). Les nombreux paramètres du modèle devront être valués (par mesure, par identification, ...). En relation avec le thème "système propulsif et directif" il faudra valider que le ballon sera contrôlable, c'est-à-dire qu'il existe une poussée applicable pour assurer le vol.
+## Contrôle/commande
 
-## Simulateur
 
-Étudiants (4):
-
-- Arthur Poure -	arthur.poure@ens-paris-saclay.fr
-- Romain Maison - romain.maison@ens-paris-saclay.fr
-- Emilien Dufresne - emilien.dufresne@ens-paris-saclay.fr
-
-Le simulateur retenu est [Webots](https://www.cyberbotics.com/) (Open Source Robot Simulator)
-
-- guide utilisateur https://www.cyberbotics.com/doc/guide/index
-- tutoriaux https://www.cyberbotics.com/doc/guide/tutorials
-
-Un exemple de dirigeable est proposé dans la bibliothèque du logiciel https://cyberbotics.com/doc/guide/blimp?version=R2021b
-
-![Webots animation](img/webots_blimp_demo.gif)
 
 ## Bibliographie
 
