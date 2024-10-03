@@ -1,0 +1,6 @@
+- detection avec une camera branché sur une raspberry pi zero 2 (id : cobra0 / mdp : cobra0)
+- accés par routeur covapsy (id : covapsy2 / mdp : covapsy$2022) interface admin (id : covapsy / mdp : covapsy$2022)
+- traitement par python avec les bibliotheques apriltag et cv2 (https://github.com/duckietown/lib-dt-apriltags) (https://github.com/AprilRobotics/apriltag) et (https://pypi.org/project/opencv-python/)
+- calibration caméra avec un damier noir et blanc et la bibliotheque cv2
+- protocole : passage en echelle de gris, on utilise Detector() de apriltag, on obtient different parametre
+- données utiles : matrice de rotation, vecteur de translation, marge d'erreur 

@@ -1,23 +1,35 @@
-# Systèmes embarqués
+# Systèmes embarqués et Localisation
 
-Equipe 2 :
-__Mathis__ et __Maxime__ font les bibliothèques de commande des servo-moteurs, avec les PWM hardware d'une part et le composant i2c->PWM PCA9685 d'autre part. Cela fonctionne, il faut qu'ils documentent.
+Enseignant référent : Anthony Juton
 
-__Pierrot__ et __Damien__ doivent documenter l'utilisation de la manette de PS4, ainsi que l'utilisation du BNO055 et du BME280.
+Cette page est destinée à présenter l'avancement du travail sur :
 
-__Arthur__ et ?? doivent tester et documenter la mise en oeuvre du télémètre SRF10 avec TCAxxx.
+* La prise en main de la carte Raspberry Pi Zero 2 W
+* L'évaluation des télémètres infrarouge (Capteur de Distance LIDAR 8m TF-Luna)
+* L'amélioration des bibliothèque d'utilisation des capteurs (BNO055, télémètre) et actionneurs (variateurs ESC et servo-moteurs)
+* L'évaluation des capteurs Bosch proprioceptifs
+* La localisation
 
-__Pierre-Louis__ et __Mathieu__ valident le fonctionnement du récepteur des balises.
+## Présentation des 2 solutions de localisation retenues après le travail de 2023-2024
 
-__Romain__ et __Louis__ ont fait les mesures de consommation. Ils doivent tester la détection des apriltags sur un PC fixe (hors problème de performance CPU). 
+**Vision apriltag**
 
-__Fantine__ a fait le schéma de la carte et la liste des composants.
+*Mathieu Guerin* et *Maxime Degraeve* ont installé Raspberry OS sur une RPI zéro. L'acquisition de l'image d'une caméra USB est opérationnel. Ils ont commencé à installer apriltag pour la reconnaissance des tags (QR Code grossiers) et le calcul de leur position et orientation. Avec la position de 1 ou plusieurs tags (placés précisément dans l'atrium) dans le repère du dirigeable, on peut retrouver la position du dirigeable dans l'atrium. Leur code est dans le dossier Localisation
 
-## Au retour des vacances : 
+**GPS Indoor**
 
-* __Fantine__, __Arthur__ et ??? feront la formation Eagle pour aboutir à une carte d'interface rapidement.
-* Un groupe d'étudiants doit faire une électronique de commande (RPI + BNO055 + PCA9685 + PS4) pour les étudiants qui travaillent sur la commande.
-* Il faut continuer à fiabiliser et intégrer ce qui fonctionne : RPI + BNO055 + PCA9685 + BME280 + SRF10
-* Il faut fiabiliser et documenter le travail fait sur les balises
-* Il faut fiabiliser et documenter la détection des apriltags et faire la transformée inverse pour obtenir la position du dirigeable.
+*Pierre-Louis Filoche* après un travail commun avec *Pierrot Cadeilhan* et *Simon Chardin* a mis en oeuvre le GPS Indoor de Marvel Mind (https://marvelmind.com/)
+
+
+## Bibliographie
+
+[1] R. Fedorenko et V. Krukhmalev, « Indoor Autonomous Airship Control and Navigation System », MATEC Web of Conferences, vol. 42, p. 01006, 2016, doi: 10.1051/matecconf/20164201006 (http://www.matec-conferences.org/10.1051/matecconf/20164201006)
+
+[2] J. Rao, Z. Gong, J. Luo, et S. Xie, « A flight control and navigation system of a small size unmanned airship », in IEEE International Conference Mechatronics and Automation, 2005, juill. 2005, p. 1491-1496 Vol. 3. doi: 10.1109/ICMA.2005.1626776. Disponible sur: https://ieeexplore.ieee.org/document/1626776
+
+[3] Le site web des centrales inertielles de bosch : https://www.bosch-sensortec.com/products/motion-sensors/imus/
+
+[8] Marvelmind propose plusieurs kits de localisation d'intérieur : https://marvelmind.com
+
+[9] AprilTags https://april.eecs.umich.edu/software/apriltag
 
