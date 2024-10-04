@@ -6,9 +6,7 @@ Le projet CoBRA (Course de Ballons Réactifs et Autonomes) à pour objectif de c
 
 ## 1 Constitution des équipes
 
-- Equipe 1 - 
-- Equipe 2 - 
-- Equipe 3 - 
+![illustration](img/Equipes.png)
 
 Chaque équipe doit fournir au moins 1 membre à chacun des 4 groupes de travail suivants :
 * Préhension & Dépot
