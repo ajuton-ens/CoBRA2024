@@ -33,3 +33,5 @@ Cette page est destinée à présenter l'avancement du travail sur :
 
 [9] AprilTags https://april.eecs.umich.edu/software/apriltag
 
+[10] Projet abouti https://github.com/elenagiraldo3/april_tags_autolocalization/blob/main/detect_apriltag.py
+
