@@ -6,14 +6,14 @@ import time
 
 cap = cv2.VideoCapture(0)
 Pos_tags_sol = [{'id':0,'centre':[0,0,0], }, {'id':1,'centre':[1,0,0] }, {'id':2,'centre':[0,1,0] }, {'id':3,'centre':[1,1,0] },{'id':4,'centre':[0,2,0] }]
-a = 17.4 
-for tag in Pos_tags_sol:
+a = 17.4 # longueur/largeur des tags utlisés
+for tag in Pos_tags_sol: # création des points aux coins 
     tag['lb-rb-rt-lt'] = [[tag['centre'][0]-a/2,tag['centre'][1]-a/2,tag['centre'][2]],[tag['centre'][0]+a/2,tag['centre'][1]-a/2,tag['centre'][2]],[tag['centre'][0]-a/2,tag['centre'][1]+a/2,tag['centre'][2]],[tag['centre'][0]+a/2,tag['centre'][1]+a/2,tag['centre'][2]]]
 camera_mat = np.array([[2541,0,1692],[0,2542,1315],[0,0,1]])
 coef_dist = np.array([[7.343*10**(-3),1.236,-1.877*10**(-3),6.804*10**(-3)]])
 
 picam2 = Picamera2()
-HEIGH,WIDTH=1232,1640
+HEIGH,WIDTH=3280,2464 #résolution de la caméra
 picam2.configure(picam2.create_preview_configuration({'size':(WIDTH,HEIGH)}))
 picam2.start()
 
