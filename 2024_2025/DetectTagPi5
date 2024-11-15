@@ -75,4 +75,3 @@ while True:
     photo = cv2.cvtColor(picam2.capture_array(),cv2.COLOR_BGR2GRAY)
     
     print(position_camera(photo,Pos_tags_sol,camera_mat,coef_dist))
-    time.sleep(1)
