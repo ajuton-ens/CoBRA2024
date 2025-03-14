@@ -1,8 +1,9 @@
-#documentation des bibliothèques 2025
+# documentation des bibliothèques 2025
 
-##bibliothèque bno055
-###fonction initialisation
+## bibliothèque bno055
 
-###fonction calibration
+### fonction initialisation
+
+### fonction calibration
 
 
