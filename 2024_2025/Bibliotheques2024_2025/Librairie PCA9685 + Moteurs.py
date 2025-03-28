@@ -123,7 +123,7 @@ print("Prêt - Initialisation réalisée")
 
 # Boucle_continue/principale
 while True : 
-    commande_vitesse_pourcentage=int(input("Donner la commande de vitesse du moteur en pourcentage (entre -100 et 100):"))
+    commande_vitesse_pourcentage=int(input("Donner la commande de vitesse du moteur en pourcentage (entre -100 et 100):"))*10
     numero_moteur=int(input("Donner numero moteur:"))
     
     mot_brushless.commande(commande_vitesse_pourcentage,numero_moteur)
