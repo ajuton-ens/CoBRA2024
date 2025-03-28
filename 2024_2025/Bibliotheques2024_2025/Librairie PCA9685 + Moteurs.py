@@ -16,7 +16,7 @@ import warnings
 myi2cbus = smbus2.SMBus(1) # Initialisation du bus I2C
 
 class PCA9685: #pour commander les sorties pwm
-    def __init__(self, bus, address_PCA9685=0x40):
+    def __init__(self, bus, address_PCA9685=0x60):
         
         self.address_PCA9685 = address_PCA9685
         self.bus=bus
