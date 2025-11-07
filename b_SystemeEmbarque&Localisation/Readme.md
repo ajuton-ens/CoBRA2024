@@ -18,7 +18,7 @@ Cette page est destinée à présenter l'avancement du travail sur :
 **GPS Indoor**
 
 **Proprioception**
-
+07/11 : test du capteur BMI088, les données sont reçues via un arduino intermédiaire prochaine séance: voire à enlever l'arduino et recevoir les données directement sur le PI via I2C
 
 
 ## Bibliographie
