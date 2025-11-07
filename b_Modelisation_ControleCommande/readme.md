@@ -6,11 +6,12 @@
 ![Modèle dynamique](img/modele_dynamique.png)
 
 
-**objectif** : établir un modèle de la dynamique du ballon (toutes les hypothèses ajoutées devront être étayées). Les nombreux paramètres du modèle devront être évalués (par mesure, par identification, ...). En relation avec le thème "système propulsif et directif" il faudra valider que le ballon sera contrôlable, c'est-à-dire qu'il existe une poussée applicable pour assurer le vol.
+**objectif** : établir un modèle de la dynamique du ballon (toutes les hypothèses ajoutées devront être étayées). Les nombreux paramètres du modèle devront être évalués (par mesure, par identification, ...). Identifier les paramètres de ce modèle via des essais.
 
 ## Contrôle/commande
 
-
+A partir du modèle et de ses paramètres, concevoir un correcteur en simulation, tester et régler ce correcteur sur le système réel.
+Dans un premier temps, on isole l'asservissement des 4 axes. Dans un second temps, on travaille sur un asservissement multivariables.
 
 ## Bibliographie
 
