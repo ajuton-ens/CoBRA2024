@@ -16,4 +16,4 @@ Erreur de minimum : 2 minimums détectés -> lié au calcul de position
 Essai en XY (code essai..._dg , fichier: 10:24) : commande avant : gauche positif, droit négatif
 Bascule et chute en commande avant-arrière
 
-Travail sur lacet
+Travail sur lacet : sens horaire : 4 moteurs en positif
