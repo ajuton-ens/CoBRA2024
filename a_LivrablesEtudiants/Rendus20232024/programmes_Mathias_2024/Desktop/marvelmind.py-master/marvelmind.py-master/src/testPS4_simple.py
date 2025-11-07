@@ -1,0 +1,265 @@
+
+from pyPS4Controller.controller import Controller
+import sys
+# from acquisitionPos import Acq_position
+import threading
+from moteurs_lib import *
+import adafruit_bno055
+import board
+import time
+import math
+import smbus2
+from BNO055_lib import *
+from control_lib import *
+
+class MyController(Controller):
+    def __init__(self, **kwargs):
+        Controller.__init__(self, **kwargs)        
+    
+    def on_R3_down(self,value):
+        global servo
+        commande=180+value/32768*60
+        if commande < -270:
+              commande = -270
+        if commande>270 :
+              commande = 270
+        print("rd : ",commande)
+        servo.set_angle(commande)
+        
+    def on_R3_up(self,value):
+        global servo
+        commande=180+value/32768*60
+        if commande < -270:
+              commande = -270
+        if commande > 270 :
+              commande = 270
+        print("ru :",commande)
+        servo.set_angle(commande)
+    
+    
+    def on_R3_right(self,value):
+        global back_motor
+        back_motor.set_speed(value/66000)
+        
+    def on_R3_left(self,value):
+        global back_motor
+        back_motor.set_speed(value/66000)
+    
+    def on_L3_up(self,value):
+        global main_motor
+        main_motor.set_speed(-value/33000)
+
+    def on_L3_down(self,value):
+        global main_motor
+        main_motor.set_speed(0)
+                
+    def on_x_press(self):
+        print("x press")
+        servo.set_angle(212)
+        
+    def on_circle_press(self):
+        servo.set_angle(0)
+
+# Define motors
+nb_channels = 16
+address_HAT = 0x40
+
+time_virage=10
+time_arret=14
+
+HAT = ServoKit(channels=nb_channels, address=address_HAT)
+servo = Servo([270, 0, -10], [1840, 1107, 1000], HAT, 3)
+main_motor = BrushlessMotor(HAT, 0)
+back_motor = MCC(HAT, 2)
+
+
+# Define sensor
+i2c = smbus2.SMBus(1)
+sensor = BNO055_i2c(i2c, 0x28)
+sensor.axis_remap=(1,2,0,1,1,1)
+sensor.accel_range = ACCEL_2G
+sensor.mode = IMUPLUS_MODE
+
+
+last_val = 0xFFFF
+
+
+# Define lists for angles
+x = [0]
+
+roll_q = [0]
+roll_acc = [0]
+roll_gyr = [0]
+roll_eul = [0]
+
+pitch_q = [0]
+pitch_acc = [0]
+pitch_gyr = [0]
+pitch_eul = [0]
+
+yaw_q = [0]
+yaw_acc = [0]
+yaw_gyr = [0]
+yaw_eul = [0]
+
+
+roll_filt = [0]
+pitch_filt = [0]
+yaw_filt = [0]
+
+w_roll = [0]
+w_pitch = [0]
+w_yaw = [0]
+
+
+
+
+# Define data processing functions
+
+def yaw_pitch_roll_from_q(q):
+    """Get the equivalent yaw-pitch-roll angles aka. intrinsic Tait-Bryan angles following the x-y-z convention"""
+    qw = q[0]
+    qx = q[1]
+    qy = q[2]
+    qz = q[3]
+
+
+    roll = math.atan2(2.0*(qy*qz + qw*qx), qw*qw - qx*qx - qy*qy + qz*qz)*180/math.pi
+    pitch = math.asin(-2.0*(qx*qz - qw*qy))*180/math.pi
+    yaw = math.atan2(2.0*(qx*qy + qw*qz), qw*qw + qx*qx - qy*qy - qz*qz)*180/math.pi
+
+    return roll, pitch, yaw  
+
+def yaw_pitch_roll_from_acc(acc):
+    """Get the equivalent yaw-pitch-roll angles aka. intrinsic Tait-Bryan angles following the x-y-z convention"""
+    accx = acc[0]
+    accy = acc[1]
+    accz = acc[2]
+
+
+    roll = math.atan2(accy/9.81, accz/9.81)*180/math.pi
+    pitch = -math.atan2(accx/9.81, accz/9.81)*180/math.pi
+    yaw = math.atan2(accx/9.81, accy/9.81)*180/math.pi
+
+    return roll, pitch, yaw  
+
+def yaw_pitch_roll_from_gyr(g, angles):
+    """Get the equivalent yaw-pitch-roll angles aka. intrinsic Tait-Bryan angles following the x-y-z convention"""
+    
+    timediff = 0.150
+    gyrx = g[0]
+    gyry = g[1]
+    gyrz = g[2]
+
+    roll = angles[0]
+    pitch = angles[1] 
+    yaw = angles[2]
+
+    roll = gyrx * timediff * 180/math.pi + roll
+    pitch = gyry * timediff * 180/math.pi + pitch
+    yaw = gyrz * timediff * 180/math.pi + yaw
+
+    if roll < -180:
+        roll = 180
+    elif roll > 180:
+        roll = -180
+
+    if pitch < -180:
+        pitch = 180
+    elif pitch > 180:
+        pitch = -180
+
+    if yaw < -180:
+        yaw = 180
+    elif yaw > 180:
+        yaw = -180
+
+
+    return roll, pitch, yaw
+
+
+def filter(angles_acc, angles_q, angles_gyr, angles_eul, trust_gyr, trust_acc, trust_eul):
+    """Get the equivalent yaw-pitch-roll angles aka. intrinsic Tait-Bryan angles following the x-y-z convention"""
+
+
+
+    roll_acc = angles_acc[0]
+    pitch_acc = angles_acc[1] 
+    yaw_acc = angles_acc[2]
+
+    roll_gyr = angles_gyr[0]
+    pitch_gyr = angles_gyr[1] 
+    yaw_gyr = angles_gyr[2]
+
+    roll_q = angles_q[0]
+    pitch_q = angles_q[1] 
+    yaw_q = angles_q[2]
+
+    roll_eul = angles_q[0]
+    pitch_eul = angles_q[1] 
+    yaw_eul = angles_q[2]
+
+    roll = trust_gyr * roll_gyr + (1-trust_gyr-trust_acc-trust_eul) * roll_q + trust_acc * roll_acc + trust_eul * roll_eul
+    
+    pitch = trust_gyr * pitch_gyr + (1-trust_gyr-trust_acc-trust_eul) * pitch_q + trust_acc * pitch_acc + trust_eul * pitch_eul
+    
+    yaw = trust_gyr * yaw_gyr + (1-trust_gyr-trust_eul) * yaw_q + trust_eul * yaw_eul
+
+    return roll, pitch, yaw
+
+
+
+# Initialisation motor
+print('Début initialisation')
+
+roll_init = []
+pitch_init = []
+yaw_init = []
+main_motor.initialisation()
+back_motor.initialisation()
+time.sleep(2.5)
+for i in range(10):
+    try:
+        q = sensor.quaternion
+        roll_init.append(yaw_pitch_roll_from_q(q)[0])
+        pitch_init.append(yaw_pitch_roll_from_q(q)[1])
+        yaw_init.append(yaw_pitch_roll_from_q(q)[2])
+    except:
+        pass
+    time.sleep(0.05)
+roll_initialisation = sum(roll_init)/len(roll_init)
+pitch_initialisation = sum(pitch_init)/len(pitch_init)
+yaw_initialisation = (sum(yaw_init)/len(yaw_init)+360)%360+90
+
+print('Initialisation roll : ', roll_initialisation)
+print('Initialisation pitch : ', pitch_initialisation)
+print('Initialisation yaw : ',yaw_initialisation)
+
+
+print('Fin initialisation')
+
+
+# Initialisation PIDs
+PID_pitch = PID(1,1,0,0)
+PID_yaw = PID(1/80,0,1/150,90)
+PID_w_yaw = PID(1/45,0,0,0)
+
+stateA = True
+stateA_A = True
+stateA_B = False
+stateA_C = False
+
+
+pitch_offset = 13
+yaw_offset = 0
+
+time_init = time.time()
+time_prec = time_init
+time_current = time_init
+
+
+controller = MyController(interface="/dev/input/js0", connecting_using_ds4drv=False)
+controller.listen()
+
+
+   

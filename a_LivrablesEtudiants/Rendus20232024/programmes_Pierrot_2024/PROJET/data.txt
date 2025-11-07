@@ -1,0 +1,105 @@
+
+
+ distance = 160 cm 
+ altitude = 2.54014392974551 
+ pression = 985.8030614468677
+
+ distance = 173 cm 
+ altitude = 2.264177200057545 
+ pression = 985.8353179872631
+
+ distance = 174 cm 
+ altitude = 2.1959624036829455 
+ pression = 985.8432914472972
+
+ distance = 172 cm 
+ altitude = 1.6533263092554815 
+ pression = 985.906720707748
+
+ distance = 152 cm 
+ altitude = 2.670404045285588 
+ pression = 985.7878362103039
+
+ distance = 145 cm 
+ altitude = 2.1277478285044498 
+ pression = 985.8512649336947
+
+ distance = 146 cm 
+ altitude = 2.5339767921122625 
+ pression = 985.8037822871951
+
+ distance = 143 cm 
+ altitude = 2.1277478285044498 
+ pression = 985.8512649336947
+
+ distance = 140 cm 
+ altitude = 2.1277478285044498 
+ pression = 985.8512649336947
+
+ distance = 144 cm 
+ altitude = 2.2967525131574527 
+ pression = 985.8315103573327
+
+ distance = 168 cm 
+ altitude = 2.059533474556509 
+ pression = 985.8592384464527
+
+ distance = 142 cm 
+ altitude = 2.6021903080910302 
+ pression = 985.7958092355698
+
+ distance = 142 cm 
+ altitude = 2.670404045285588 
+ pression = 985.7878362103039
+
+ distance = 140 cm 
+ altitude = 2.6021903080910302 
+ pression = 985.7958092355698
+
+ distance = 161 cm 
+ altitude = 0.686756432408869 
+ pression = 985.8197284695157
+
+ distance = 157 cm 
+ altitude = 0.44952216009336876 
+ pression = 985.8474570007876
+
+ distance = 155 cm 
+ altitude = 1.161240699819143 
+ pression = 985.7642714639214
+
+ distance = 156 cm 
+ altitude = 0.8231880658438322 
+ pression = 985.8037822871951
+
+ distance = 157 cm 
+ altitude = 0.7549721384963078 
+ pression = 985.8117553651778
+
+ distance = 197 cm 
+ altitude = 1.2294555678783483 
+ pression = 985.7562988207175
+
+ distance = 160 cm 
+ altitude = 0.686756432408869 
+ pression = 985.8197284695157
+
+ distance = 161 cm 
+ altitude = 0.7549721384963078 
+ pression = 985.8117553651778
+
+ distance = 154 cm 
+ altitude = 0.7549721384963078 
+ pression = 985.8117553651778
+
+ distance = 165 cm 
+ altitude = 1.093026053024945 
+ pression = 985.7722441334777
+
+ distance = 163 cm 
+ altitude = 0.9239959455654841 
+ pression = 985.791999957227
+
+ distance = 151 cm 
+ altitude = 0.28050967243935393 
+ pression = 985.8672119855693

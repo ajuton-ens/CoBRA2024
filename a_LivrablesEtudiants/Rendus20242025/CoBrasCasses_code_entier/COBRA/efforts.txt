@@ -1,0 +1,1 @@
+consignes z : 1.5 mesures z : 2.368386101951342 efforts z : [ 0.  0. 20. 10.  0.  0.]

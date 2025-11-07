@@ -1,0 +1,587 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.004999917906187493 -0.00495016706673187 -0.9999752480271413 1.5808210778334237
+  position -57.4595995533623 249.01412907523277 4.989490450465822
+}
+TexturedBackground {
+}
+Floor {
+  size 200 200
+}
+Robot {
+  translation -44.2 65.07 7.52
+  children [
+    DistanceSensor {
+      translation 0.31 0 -0.6
+      children [
+        Shape {
+          geometry Box {
+            size 0.05 0.05 0.05
+          }
+        }
+      ]
+      name "capteur"
+      lookupTable [
+        0 0 0
+        10 1000 0
+      ]
+    }
+    GPS {
+      name "vittesse"
+    }
+    DEF rotational Propeller {
+      shaftAxis 0 1 0
+      centerOfThrust -0.59 0 -0.43
+      thrustConstants 5.8e-06 0.00031
+      torqueConstants 0 0
+      device RotationalMotor {
+        name "helice_rotationelle"
+        acceleration 10000
+        maxVelocity 1000000
+        maxTorque 10000
+      }
+      fastHelix Solid {
+        translation -0.59 0 -0.43
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.2 0.01 0.1
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+      slowHelix Solid {
+        translation -0.59 0 -0.43
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.2 0.01 0.1
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+    }
+    DEF horizontal Propeller {
+      centerOfThrust -0.02 0 -0.6
+      thrustConstants 5.8e-06 0.00031
+      torqueConstants 0 0
+      device RotationalMotor {
+        name "helice_horizontale"
+        acceleration 1e+19
+        maxVelocity 10000
+        maxTorque 10000
+      }
+      fastHelix Solid {
+        translation -0.02 0 -0.6
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.01 0.2 0.1
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+      slowHelix Solid {
+        translation -0.02 0 -0.6
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.01 0.2 0.1
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+    }
+    DEF nacelle Solid {
+      translation 0.13 0 -0.6
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.3 0.1 0.1
+          }
+        }
+      ]
+      immersionProperties [
+        ImmersionProperties {
+          fluidName "air"
+        }
+      ]
+      boundingObject Box {
+        size 0.3 0.1 0.1
+      }
+      physics Physics {
+        density -1
+        mass 2.43
+      }
+    }
+    DEF envelope Solid {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "../../Downloads/Enveloppe.obj"
+            ]
+          }
+        }
+      ]
+      name "solid(1)"
+      immersionProperties [
+        ImmersionProperties {
+          fluidName "air"
+          dragForceCoefficients 0.1 0.2 0.2
+          dragTorqueCoefficients 0.2 0.2 0.2
+        }
+      ]
+      boundingObject Mesh {
+        url [
+          "../../Downloads/Enveloppe.obj"
+        ]
+      }
+      physics Physics {
+        density -1
+        mass 0.3
+      }
+    }
+  ]
+  name "robot(4)"
+  immersionProperties [
+    ImmersionProperties {
+      fluidName "air"
+    }
+  ]
+  boundingObject Mesh {
+    url [
+      "../../Downloads/Enveloppe.obj"
+    ]
+  }
+  physics Physics {
+    density 0.172
+  }
+  controller "controller_test2"
+}
+Robot {
+  translation 20.77 61.84 7.52
+  children [
+    DistanceSensor {
+      translation 0.31 0 -0.6
+      children [
+        Shape {
+          geometry Box {
+            size 0.05 0.05 0.05
+          }
+        }
+      ]
+      name "capteur"
+      lookupTable [
+        0 0 0
+        10 1000 0
+      ]
+    }
+    GPS {
+      name "vittesse"
+    }
+    DEF rotational Propeller {
+      shaftAxis 0 1 0
+      centerOfThrust -0.59 0 -0.43
+      thrustConstants 5.8e-06 0.00031
+      torqueConstants 0 0
+      device RotationalMotor {
+        name "helice_rotationelle"
+        acceleration 10000
+        maxVelocity 1000000
+        maxTorque 10000
+      }
+      fastHelix Solid {
+        translation -0.59 0 -0.43
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.2 0.01 0.1
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+      slowHelix Solid {
+        translation -0.59 0 -0.43
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.2 0.01 0.1
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+    }
+    DEF nacelle Solid {
+      translation 0.13 0 -0.6
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+            anchor -0.15 0 0
+          }
+          device [
+            RotationalMotor {
+              name "motor_joint"
+            }
+          ]
+          endPoint Solid {
+            translation -0.15 0 0
+            rotation 0 1 0 0
+            children [
+              DEF horizontal Propeller {
+                thrustConstants 5.8e-06 0.00031
+                torqueConstants 0 0
+                device RotationalMotor {
+                  name "helice_horizontale"
+                  acceleration 1e+19
+                  maxVelocity 10000
+                  maxTorque 10000
+                }
+                fastHelix Solid {
+                  children [
+                    Shape {
+                      appearance PBRAppearance {
+                        baseColor 0 0 0
+                      }
+                      geometry Box {
+                        size 0.01 0.2 0.1
+                      }
+                    }
+                  ]
+                  name "solid(2)"
+                }
+                slowHelix Solid {
+                  children [
+                    Shape {
+                      appearance PBRAppearance {
+                        baseColor 0 0 0
+                      }
+                      geometry Box {
+                        size 0.01 0.2 0.1
+                      }
+                    }
+                  ]
+                  name "solid(2)"
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.01 0.01 0.01
+            }
+            physics Physics {
+              density -1
+              mass 0.001
+            }
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.3 0.1 0.1
+          }
+        }
+      ]
+      immersionProperties [
+        ImmersionProperties {
+          fluidName "air"
+        }
+      ]
+      boundingObject Box {
+        size 0.3 0.1 0.1
+      }
+      physics Physics {
+        density -1
+        mass 1.77
+      }
+    }
+    DEF envelope Solid {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "Enveloppe.obj"
+            ]
+          }
+        }
+      ]
+      name "solid(1)"
+      immersionProperties [
+        ImmersionProperties {
+          fluidName "air"
+          dragForceCoefficients 0.1 0.2 0.2
+          dragTorqueCoefficients 0.2 0.2 0.2
+        }
+      ]
+      boundingObject Mesh {
+        url [
+          "Enveloppe.obj"
+        ]
+      }
+      physics Physics {
+        density -1
+        mass 1
+        inertiaMatrix [
+          0.012 0.194 0.194
+          0 0 0
+        ]
+      }
+    }
+  ]
+  name "robot(2)"
+  immersionProperties [
+    ImmersionProperties {
+      fluidName "air"
+    }
+  ]
+  boundingObject Mesh {
+    url [
+      "Enveloppe.obj"
+    ]
+  }
+  physics Physics {
+    density 0.14
+  }
+  controller "controller_test2"
+}
+Solid {
+  translation -44.02 -44.09 3.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1 20 20
+      }
+    }
+  ]
+  boundingObject Box {
+    size 1 20 20
+  }
+}
+Robot {
+  translation -13.96 0 7.42
+  children [
+    DistanceSensor {
+      translation 0.28 0 -0.6
+      children [
+        Shape {
+          geometry Box {
+            size 0.05 0.05 0.05
+          }
+        }
+      ]
+      name "capteur"
+      lookupTable [
+        0 0 0
+        10 1000 0
+      ]
+    }
+    GPS {
+      name "vittesse"
+    }
+    DEF rotational Propeller {
+      shaftAxis 0 1 0
+      centerOfThrust -0.59 0 -0.43
+      thrustConstants 5.8e-06 0.00031
+      torqueConstants 0 0
+      device RotationalMotor {
+        name "helice_rotationelle"
+        acceleration 10000
+        maxVelocity 1000000
+        maxTorque 10000
+      }
+      fastHelix Solid {
+        translation -0.59 0 -0.43
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.2 0.01 0.05
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+      slowHelix Solid {
+        translation -0.59 0 -0.43
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.2 0.01 0.05
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+    }
+    DEF horizontal Propeller {
+      centerOfThrust -0.02 0 -0.6
+      thrustConstants 5.8e-06 0.00031
+      torqueConstants 0 0
+      device RotationalMotor {
+        name "helice_horizontale"
+        acceleration 1e+19
+        maxVelocity 10000
+        maxTorque 10000
+      }
+      fastHelix Solid {
+        translation -0.02 0 -0.6
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.01 0.2 0.05
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+      slowHelix Solid {
+        translation -0.02 0 -0.6
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+            }
+            geometry Box {
+              size 0.01 0.2 0.05
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+    }
+    DEF nacelle Solid {
+      translation 0.13 0 -0.6
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.3 0.1 0.1
+          }
+        }
+      ]
+      immersionProperties [
+        ImmersionProperties {
+          fluidName "air"
+        }
+      ]
+      boundingObject Box {
+        size 0.3 0.1 0.1
+      }
+      physics Physics {
+        density -1
+        mass 2.43
+      }
+    }
+    DEF envelope Solid {
+      rotation 1 0 0 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "Enveloppe.obj"
+            ]
+          }
+        }
+      ]
+      name "solid(1)"
+      immersionProperties [
+        ImmersionProperties {
+          fluidName "air"
+          dragForceCoefficients 0.1 0.2 0.2
+          dragTorqueCoefficients 0.1 0.1 0.1
+        }
+      ]
+      boundingObject Mesh {
+        url [
+          "Enveloppe.obj"
+        ]
+      }
+      physics Physics {
+        density -1
+        mass 0.3
+        inertiaMatrix [
+          0.012 0.194 0.194
+          0 0 0
+        ]
+      }
+    }
+  ]
+  immersionProperties [
+    ImmersionProperties {
+      fluidName "air"
+    }
+  ]
+  boundingObject Mesh {
+    url [
+      "Enveloppe.obj"
+    ]
+  }
+  physics Physics {
+    density 0.172
+  }
+  controller "controller_test"
+}
+DEF air Fluid {
+  name "air"
+  density 1.2
+  viscosity 1
+  boundingObject Box {
+    size 500 500 500
+  }
+}
+TexturedBackgroundLight {
+}
