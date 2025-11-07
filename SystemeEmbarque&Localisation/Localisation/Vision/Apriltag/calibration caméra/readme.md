@@ -1,2 +1,0 @@
-On doit calibré la caméra afin d'avoir les coordonnées de la projection du centre optique dans le plan image, les distance focal exprimé en hauteur et largeur de pixel, ainsi que les coéfficients de distortion de la caméra
-On utilise pour cela un dammier noir et blanc de minimum 7x7 avec des tailles de carreau connu. On prend une dizaine de photo avec différents angles et on lance le programme avec OpenCv
