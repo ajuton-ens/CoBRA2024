@@ -10,15 +10,15 @@ Cette page est destinée à présenter l'avancement du travail sur :
 * L'évaluation des capteurs Bosch proprioceptifs
 * La localisation
 
-## Présentation des 2 solutions de localisation retenues après le travail de 2023-2024
+## Avancement 2025-2026
 
-**Vision apriltag**
+**Vision**
 
-*Mathieu Guerin* et *Maxime Degraeve* ont installé Raspberry OS sur une RPI zéro. L'acquisition de l'image d'une caméra USB est opérationnel. Ils ont commencé à installer apriltag pour la reconnaissance des tags (QR Code grossiers) et le calcul de leur position et orientation. Avec la position de 1 ou plusieurs tags (placés précisément dans l'atrium) dans le repère du dirigeable, on peut retrouver la position du dirigeable dans l'atrium. Leur code est dans le dossier Localisation
 
 **GPS Indoor**
 
-*Pierre-Louis Filoche* après un travail commun avec *Pierrot Cadeilhan* et *Simon Chardin* a mis en oeuvre le GPS Indoor de Marvel Mind (https://marvelmind.com/)
+**Proprioception**
+
 
 
 ## Bibliographie
