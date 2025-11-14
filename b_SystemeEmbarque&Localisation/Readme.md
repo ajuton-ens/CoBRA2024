@@ -16,6 +16,46 @@ Cette page est destinée à présenter l'avancement du travail sur :
 07/11 : tests sur une nouvelle caméra des méthodes de calibration et détection des Apriltags réussis. Familiarisation avec le code de localisation utilisé actuellement sur le dirigeable. Codage sur une nouvelle camera pour la detection du centre du nouveau tag issu de la bibliothèque Aruco pour détecter le dirigeable depuis le plafond, même lorsqu'il est loin. Ceci sert pour détecter la translation du dirigeable. Pour plus tard : finalisation de ce codage pour détecter les rotations.
 
 **GPS Indoor**
+GPS Indoor sous Dashboard
+
+Tuto vidéo : https://youtu.be/Uj2_BGS1AjI 
+
+Matériel :
+- logiciel Dashboard  
+-set marvelmind robotics super-MP-3D (5 beacon et un modem)
+
+Protocole : 
+1)	Installer Dashboard sur https://marvelmind.com/download/#SW ainsi que les driver nécessaire
+2)	Allumer 2=ON 
+3)	Connecter beacon sur le pc en filaire 
+4)	Upgrade le firmware de chaque balise et du modem en haut à gauche de l’écran
+5)	Cliquer sur le bouton default pour chaque beacon en bas à droite de l’écran
+6)	Définir une adresse différence pour chaque beacon (ex : 1,2,3,4,5) et cliquer sur write change en haut à droite de l’écran
+7)	Identifier chaque balise en mobile (Mobile Beacon a.k.a. “Hedgehog” ) ou fixe (Stationary Beacon) avec le hedgedog mode en enable ou disable . 
+8)	Faire de même pour le modem (firmware+default button)
+9)	Placer les balises en mesurant les distances qui les sépares et leurs altitudes respectives. 
+10)	Personnellement les balises sont placées à la même hauteur (0.75 m du sol )et forme une surface rectangulaire de 3,5x5,18 m2 (voir carte associé)
+11)	Créer une submap
+12)	Réveiller chaque balise fixe dans la submap 0 
+13)	Rentré manuellement leur position relative(x,y,z) car le mode placement auto n’est pas précis( clique droit sur le beacon sur la carte)
+14)	freezsubmap 
+15)	Réveiller balise mobile et fixer son altitude
+
+
+
+	On peut maintenant se déplacer dans l’espace (voir vidéo test)  
+
+Piste d’amélioration :
+ -placer les balises en hauteur orienté vers la zone à couvrir pour augmenter la zone et réduire les interférences du au passage des humains dans l’espace 
+-l’altitude ne marche pas (à régler)
+-position peu précise(plusieurs frezze de position) ( parfois la balise disparait) 
+=>peu fiable et robuste pour le moment 
+=> plus fiable/robuste avec 2 balise comme sur la vidéo tuto 
+-faire un essai/test sur dirigeable en mouvement 
+-intérêt pour le projet final ? 
+
+
+
 
 **Proprioception**
 07/11 : test du capteur BMI088, les données sont reçues via un arduino intermédiaire prochaine séance: voire à enlever l'arduino et recevoir les données directement sur le PI via I2C
