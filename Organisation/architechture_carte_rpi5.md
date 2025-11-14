@@ -1,6 +1,6 @@
 # Architecture de la carte raspberry pi 5
 
-Par Lucie, Anis, 
+Par Lucie, Anis, Lisa et Matisse
 
 ## Fonction à intéger
 
