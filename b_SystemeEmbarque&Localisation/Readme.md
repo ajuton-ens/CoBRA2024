@@ -14,6 +14,7 @@ Cette page est destinée à présenter l'avancement du travail sur :
 
 **Vision**
 07/11 : tests sur une nouvelle caméra des méthodes de calibration et détection des Apriltags réussis. Familiarisation avec le code de localisation utilisé actuellement sur le dirigeable. Codage sur une nouvelle camera pour la detection du centre du nouveau tag issu de la bibliothèque Aruco pour détecter le dirigeable depuis le plafond, même lorsqu'il est loin. Ceci sert pour détecter la translation du dirigeable. Pour plus tard : finalisation de ce codage pour détecter les rotations.
+14/11 : Accès au stream vidéo.
 
 **GPS Indoor**
 GPS Indoor sous Dashboard
