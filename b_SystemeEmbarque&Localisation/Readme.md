@@ -43,15 +43,19 @@ Protocole :
 
 
 
-	On peut maintenant se déplacer dans l’espace (voir vidéo test)  
+=>On peut maintenant se déplacer dans l’espace (voir vidéo test)  
 
 Piste d’amélioration :
  -placer les balises en hauteur orienté vers la zone à couvrir pour augmenter la zone et réduire les interférences du au passage des humains dans l’espace 
+ 
 -l’altitude ne marche pas (à régler)
+
 -position peu précise(plusieurs frezze de position) ( parfois la balise disparait) 
 =>peu fiable et robuste pour le moment 
 => plus fiable/robuste avec 2 balise comme sur la vidéo tuto 
+
 -faire un essai/test sur dirigeable en mouvement 
+
 -intérêt pour le projet final ? 
 
 
