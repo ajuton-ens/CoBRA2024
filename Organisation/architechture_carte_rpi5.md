@@ -1,5 +1,7 @@
 # Architecture de la carte raspberry pi 5
 
+Par Lucie, Anis, 
+
 ## Fonction à intéger
 
 * réulateur de tension (batterie -> 5V 3A) (OKL-T/6-W12N-C)
