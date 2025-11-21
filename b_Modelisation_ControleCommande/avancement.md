@@ -17,3 +17,10 @@ Essai en XY (code essai..._dg , fichier: 10:24) : commande avant : gauche positi
 Bascule et chute en commande avant-arrière
 
 Travail sur lacet : sens horaire : 4 moteurs en positif
+
+Séance 14 novembre
+PID :
+
+PID_alt = PID(30, 0, 1e6, 40, 0.1, 0.00001)
+PID_lacet = PID(2, 0, 1e4, 30, 0.05, 0.0001)
+
