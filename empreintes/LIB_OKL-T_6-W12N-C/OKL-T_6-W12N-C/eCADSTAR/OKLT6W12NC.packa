@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "OKL-T_6-W12N-C"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-04-03-09:45:34)
+    (mountForm default
+        (footprintRef "OKLT6W12NC")
+        (spec "System")
+    )
+)

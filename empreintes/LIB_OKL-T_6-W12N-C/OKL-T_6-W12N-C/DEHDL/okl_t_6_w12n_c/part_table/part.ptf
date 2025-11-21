@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'OKL_T_6_W12N_C'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Murata Electronics", "OKL-T/6-W12N-C" (!) = "", "OKLT6W12NC", "Other", "580-OKL-T/6-W12N-C", "https://www.mouser.co.uk/ProductDetail/Murata-Power-Solutions/OKL-T-6-W12N-C?qs=b1CvEdhOXIYZVD7gV2R3gw%3D%3D", "Non-Isolated PoL Module DC DC Converter 1 Output 0.591 ~ 5.5V 6A 4.5V - 14V Input", "https://www.murata.com/products/productdata/8807038255134/okl-t6-w12.pdf?1583754815000", "7.2 mm"
+END_PART
+
+END.
