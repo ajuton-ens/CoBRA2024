@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "OKLT6W12NC"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "OKLT6W12NC")
+        (spec "default")
+    )
+)

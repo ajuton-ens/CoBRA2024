@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OKL-T_6-W12N-C
+D Non-Isolated PoL Module DC DC Converter 1 Output 0.591 ~ 5.5V 6A 4.5V - 14V Input
+K
+F https://www.murata.com/products/productdata/8807038255134/okl-t6-w12.pdf?1583754815000
+$ENDCMP
+#
+#End Doc Library

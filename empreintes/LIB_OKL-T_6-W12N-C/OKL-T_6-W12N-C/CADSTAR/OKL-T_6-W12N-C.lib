@@ -1,0 +1,16 @@
+.OKL-T_6-W12N-C :1 ;Non-Isolated PoL Module DC DC Converter 1 Output 0.591 ~ 5.5V 6A 4.5V - 14V Input
+OKLT6W12NC
+*STM PS
+*NGS
+*PLB 1="ON/OFF CONTROL" 2="VIN" 3="GROUND_1" 4="VOUT" 5="SENSE" 6="TRIM" 7="GROUND_2" 8="NO CONNECTION_1" 9="SEQUENCE" 10="POWER GOOD OUT" 11="NO CONNECTION_2" 12="NO CONNECTION_3"
+*MXP 12
+*DFN OKL-T_6-W12N-C
+~!Mouser Part Number (580-OKL-T/6-W12N-C)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Murata-Power-Solutions/OKL-T-6-W12N-C?qs=b1CvEdhOXIYZVD7gV2R3gw%3D%3D)
+~!Manufacturer_Name (Murata Electronics)
+~!Manufacturer_Part_Number (OKL-T/6-W12N-C)
+~!Link Datasheet (https://www.murata.com/products/productdata/8807038255134/okl-t6-w12.pdf?1583754815000)
+~!Height (7.2mm)
+~!3D_Model (OKL-T_6-W12N-C)
+OKL-T_6-W12N-C
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 
