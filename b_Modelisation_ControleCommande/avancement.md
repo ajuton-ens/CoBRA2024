@@ -24,3 +24,7 @@ PID :
 PID_alt = PID(30, 0, 1e6, 40, 0.1, 0.00001)
 PID_lacet = PID(2, 0, 1e4, 30, 0.05, 0.0001)
 
+28 novembre :
+
+Changement pin moteur : pin 3 -> zg et pin 6 -> zd 
+test_lib v12 
