@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PCB-CobraPID")(type "KiCad")(uri "$(KIPRJMOD)/PCB-CobraPID.pretty")(options "")(descr ""))
+)
