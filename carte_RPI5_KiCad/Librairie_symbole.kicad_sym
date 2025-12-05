@@ -6891,6 +6891,8 @@
 					(type none)
 				)
 			)
+		)
+		(symbol "XT60-M_1_0"
 			(pin passive line
 				(at -5.08 2.54 0)
 				(length 5.08)
@@ -6901,7 +6903,7 @@
 						)
 					)
 				)
-				(number "P"
+				(number "2"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6919,7 +6921,7 @@
 						)
 					)
 				)
-				(number "N"
+				(number "1"
 					(effects
 						(font
 							(size 1.016 1.016)
