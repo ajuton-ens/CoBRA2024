@@ -10,5 +10,6 @@ Par Lucie, Anis, Lisa et Matisse
 * capteur pression ambiante (icp101 ou LPS22)
 * Pont en H (L293)
 * ventilateur
+* télémètre LUNA
 
 ## Fonctions intégrés
