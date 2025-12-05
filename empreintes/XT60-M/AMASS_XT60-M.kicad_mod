@@ -1,5 +1,5 @@
 
-(footprint AMASS_XT60-M (layer F.Cu) (tedit 693294A1)
+(footprint AMASS_XT60-M (layer F.Cu) (tedit 693295D1)
   (descr "")
   (fp_text reference REF** (at -4.825 -5.935 0) (layer F.SilkS)
     (effects (font (size 1.0 1.0) (thickness 0.15)))
