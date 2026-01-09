@@ -1,1 +1,1 @@
-
+# présentation intermédiare de janvier
