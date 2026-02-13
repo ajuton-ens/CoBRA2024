@@ -1861,7 +1861,7 @@
 		(property "Reference" "SW1"
 			(at 3.99 -2.99 90)
 			(layer "F.SilkS")
-			(uuid "ff4143ad-ca6b-4c12-88ab-a677b6c93497")
+			(uuid "55c2f188-0351-4d54-8fbc-45a1a246a5df")
 			(effects
 				(font
 					(size 1 1)
@@ -1872,7 +1872,7 @@
 		(property "Value" "SW_SPDT"
 			(at 2 3 90)
 			(layer "F.Fab")
-			(uuid "e8623613-f079-411c-ab15-6bdf7818c63f")
+			(uuid "07ba546b-eb0d-4aa5-963b-8faf2b88beb1")
 			(effects
 				(font
 					(size 1 1)
@@ -1885,7 +1885,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "df5ac663-4f03-4f14-82c5-9686e777687c")
+			(uuid "314c9925-a93d-40d7-9f3f-139f82a78b79")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1898,7 +1898,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4de95ad1-d139-4c68-85ea-ac5c48a6dcc0")
+			(uuid "e4b67cbf-cce2-4368-a941-769618f73a6c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7713,7 +7713,7 @@
 			(at 0 -0.5 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "0e17beab-8c92-40ff-b32f-c099af176715")
+			(uuid "566e4351-10e6-4ccc-8149-c3615f2ae9b2")
 			(effects
 				(font
 					(size 1 1)
@@ -7725,7 +7725,7 @@
 			(at 0 1 180)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "e1b54d55-ffe7-443b-8c1a-d07b812c772a")
+			(uuid "1aebdad5-85e3-4585-812a-ecf3f8a9e6d8")
 			(effects
 				(font
 					(size 1 1)
@@ -7738,7 +7738,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "629f2a68-ab3c-4e27-afef-0eeb1cc9d244")
+			(uuid "cfdda1c2-c719-4da2-b33d-af467712d71a")
 			(effects
 				(font
 					(size 1 1)
@@ -7751,7 +7751,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "523d4b67-0570-4106-b871-bcfa44f408a7")
+			(uuid "578b31c3-d6e8-492f-b3c4-ba62b34de904")
 			(effects
 				(font
 					(size 1 1)
@@ -11024,6 +11024,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 4)
 		(uuid "998fc136-9625-4ae3-815b-cd004462c455")
+	)
+	(via
+		(at 169.32 74.86)
+		(size 1.2)
+		(drill 0.8)
+		(layers "F.Cu" "B.Cu")
+		(net 4)
+		(uuid "e6253435-2257-4585-b1b3-4209219e4d01")
 	)
 	(segment
 		(start 156.53 86.1)
