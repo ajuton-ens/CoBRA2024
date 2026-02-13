@@ -6245,6 +6245,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 53.34) (xy 57.15 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "003b580a-9ced-49e9-9dc7-ba9324f7b53e")
+	)
+	(wire
+		(pts
 			(xy 123.19 40.64) (xy 127 40.64)
 		)
 		(stroke
@@ -6462,6 +6472,16 @@
 			(type default)
 		)
 		(uuid "2ec90346-0a4a-4900-ac89-c811de63bb2b")
+	)
+	(wire
+		(pts
+			(xy 39.37 53.34) (xy 46.99 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "322a756c-db66-40be-8be0-e7d04f9ae8c3")
 	)
 	(wire
 		(pts
@@ -7472,16 +7492,6 @@
 			(type default)
 		)
 		(uuid "db6f2a73-a7e3-482c-882d-0e97eda344bb")
-	)
-	(wire
-		(pts
-			(xy 54.61 53.34) (xy 57.15 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbce5ee7-5e91-4641-82ca-9577c4cc4945")
 	)
 	(wire
 		(pts
@@ -9550,6 +9560,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 50.8 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11bb1126-63ca-4335-a42d-eb358ab66cd9")
+		(property "Reference" "R3"
+			(at 50.8 56.388 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "40"
+			(at 50.8 59.436 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 50.8 51.562 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 50.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9608e966-70fa-4ca6-bd64-2a7f0a839005")
+		)
+		(pin "2"
+			(uuid "60cf56de-ef3a-46f3-b297-75f187d92169")
+		)
+		(instances
+			(project "carte_rpi5_kicad"
+				(path "/1781f24e-6d21-4940-8f28-5db05927caba"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 205.74 125.73 90)
 		(unit 1)
@@ -10312,7 +10389,7 @@
 				)
 			)
 		)
-		(property "Value" "1340"
+		(property "Value" "1300"
 			(at 60.96 59.436 90)
 			(effects
 				(font
@@ -13552,7 +13629,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x20_Odd_Even")
-		(at 190.5 143.51 0)
+		(at 193.04 143.51 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13577,7 +13655,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical"
-			(at 190.5 143.51 0)
+			(at 193.04 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13586,7 +13664,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 143.51 0)
+			(at 193.04 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13595,7 +13673,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 190.5 143.51 0)
+			(at 193.04 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13799,7 +13877,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 53.34 270)
+		(at 39.37 53.34 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13808,7 +13886,7 @@
 		(fields_autoplaced yes)
 		(uuid "df9cbc42-e7d5-49d6-9d32-fc6c1bebd284")
 		(property "Reference" "#PWR03"
-			(at 48.26 53.34 0)
+			(at 33.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13817,7 +13895,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 53.3399 90)
+			(at 35.56 53.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13827,7 +13905,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 53.34 0)
+			(at 39.37 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13836,7 +13914,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 53.34 0)
+			(at 39.37 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13845,7 +13923,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 53.34 0)
+			(at 39.37 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
