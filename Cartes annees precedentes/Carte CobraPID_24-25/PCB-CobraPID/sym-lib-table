@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "PCB-CobraPID-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/PCB-CobraPID-eagle-import.kicad_sym")(options "")(descr ""))
+)
