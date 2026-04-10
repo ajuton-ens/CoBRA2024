@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRLB8748PBF
+D INFINEON - IRLB8748PBF - MOSFET Transistor, N Channel, 40 A, 30 V, 0.0038 ohm, 10 V, 1.8 V
+K
+F https://ms.componentsearchengine.com/Datasheets/2/IRLB8748PBF.pdf
+$ENDCMP
+#
+#End Doc Library

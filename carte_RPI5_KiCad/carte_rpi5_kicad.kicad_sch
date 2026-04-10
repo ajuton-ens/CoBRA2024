@@ -5868,8 +5868,8 @@
 		(uuid 0861a4df-2310-4919-beaf-cffca2966f08)
 	)
 	(rectangle
-		(start 120.396 97.536)
-		(end 120.396 97.536)
+		(start 120.396 102.616)
+		(end 120.396 102.616)
 		(stroke
 			(width 0)
 			(type default)
@@ -5953,8 +5953,8 @@
 		(uuid b6a3750f-63a0-49c7-9678-02be66120606)
 	)
 	(rectangle
-		(start 91.44 80.772)
-		(end 120.396 98.552)
+		(start 91.44 85.852)
+		(end 120.396 104.14)
 		(stroke
 			(width 0)
 			(type dash)
@@ -6119,7 +6119,7 @@
 		)
 		(uuid "f0d3d880-5102-4c95-b12b-fa7bacc917e1")
 	)
-	(text "Connecteur pour télémètre Luna\n\n\n"
+	(text "Connecteur pour télémètre Luna\n\nChanger le schéma: alimentation(5V) à ajouter en plus du 3.3V donc un pin de plus\n"
 		(exclude_from_sim no)
 		(at 105.664 81.026 0)
 		(effects
@@ -6325,7 +6325,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 92.71) (xy 110.49 92.71)
+			(xy 105.41 97.79) (xy 110.49 97.79)
 		)
 		(stroke
 			(width 0)
@@ -7295,7 +7295,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 90.17) (xy 110.49 90.17)
+			(xy 105.41 95.25) (xy 110.49 95.25)
 		)
 		(stroke
 			(width 0)
@@ -7315,7 +7315,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 95.25) (xy 110.49 95.25)
+			(xy 105.41 100.33) (xy 110.49 100.33)
 		)
 		(stroke
 			(width 0)
@@ -7485,7 +7485,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 87.63) (xy 110.49 87.63)
+			(xy 105.41 92.71) (xy 110.49 92.71)
 		)
 		(stroke
 			(width 0)
@@ -7757,7 +7757,7 @@
 	)
 	(global_label "3.3V"
 		(shape input)
-		(at 110.49 95.25 0)
+		(at 110.49 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7767,7 +7767,7 @@
 		)
 		(uuid "0de45454-de35-4758-93e3-b5e98cab457e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.5876 95.25 0)
+			(at 117.5876 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8065,7 +8065,7 @@
 	)
 	(global_label "SCL"
 		(shape input)
-		(at 110.49 90.17 0)
+		(at 110.49 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8075,7 +8075,7 @@
 		)
 		(uuid "4e830216-675a-45b4-9f13-471524b128ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.9828 90.17 0)
+			(at 116.9828 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8747,7 +8747,7 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 110.49 92.71 0)
+		(at 110.49 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8757,7 +8757,7 @@
 		)
 		(uuid "b07b2c34-11b0-48af-a50a-9f4ffee67ff3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.0433 92.71 0)
+			(at 117.0433 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12043,7 +12043,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 87.63 90)
+		(at 110.49 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12052,7 +12052,7 @@
 		(fields_autoplaced yes)
 		(uuid "a336b13b-a78b-4a37-bed8-a5eeee3d0b9b")
 		(property "Reference" "#PWR019"
-			(at 116.84 87.63 0)
+			(at 116.84 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12061,7 +12061,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 87.6299 90)
+			(at 114.3 92.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12070,7 +12070,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 87.63 0)
+			(at 110.49 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12079,7 +12079,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 87.63 0)
+			(at 110.49 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12088,7 +12088,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 87.63 0)
+			(at 110.49 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13488,7 +13488,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 100.33 90.17 0)
+		(at 100.33 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13497,7 +13497,7 @@
 		(fields_autoplaced yes)
 		(uuid "c29be970-eb1a-45a6-b996-903c4f2b8bf5")
 		(property "Reference" "Conn_luna1"
-			(at 100.965 82.55 0)
+			(at 100.965 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13505,7 +13505,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Pin"
-			(at 100.965 85.09 0)
+			(at 100.965 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13513,7 +13513,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 100.33 90.17 0)
+			(at 100.33 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13522,7 +13522,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 90.17 0)
+			(at 100.33 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13531,7 +13531,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 100.33 90.17 0)
+			(at 100.33 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
