@@ -1,0 +1,158 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "IRLB8748PBF"
+   (description "INFINEON - IRLB8748PBF - MOSFET Transistor, N Channel, 40 A, 30 V, 0.0038 ohm, 10 V, 1.8 V")
+   (family "TRX")
+   (package "TO254P483X1016X1994-3P")
+   (attribute "Datasheet Link" "https://ms.componentsearchengine.com/Datasheets/2/IRLB8748PBF.pdf")
+   (attribute "Geometry.Height" "4.83mm")
+   (attribute "Manufacturer_Name" "Infineon")
+   (attribute "Manufacturer_Part_Number" "IRLB8748PBF")
+   (attribute "Mouser Part Number" "942-IRLB8748PBF")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLB8748PBF?qs=9%252BKlkBgLFf3gv5ktjzjOKQ%3D%3D")
+   (attribute "Arrow Part Number" "IRLB8748PBF")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/irlb8748pbf/infineon-technologies-ag?region=europe")
+   (gate
+    (symbol "IRLB8748PBF")
+    (pin "G" 1 PS)
+    (pin "D" 2 PS)
+    (pin "S" 3 PS)
+   )
+  )
+  (symbol "IRLB8748PBF"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (circle (pt 400 100) (pt 100 100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 100) (pt 300 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 200) (pt 300 300))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 200 0) (pt 200 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 100) (pt 230 100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 200) (pt 230 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 0) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 220) (pt 230 180))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 -20) (pt 230 20))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 80) (pt 230 120))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 230 100) (pt 270 120) (pt 270 80) (pt 230 100))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 80 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 300 400) (rot 90) (mir X) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 300 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "TO254P483X1016X1994-3P"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.045 3.475)
+      (pt 8.125 3.475)
+      (pt 8.125 -1.855)
+      (pt -3.045 -1.855)
+      (pt -3.045 3.475))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.795 3.225)
+      (pt 7.875 3.225)
+      (pt 7.875 -1.605)
+      (pt -2.795 -1.605)
+      (pt -2.795 3.225))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -2.795 1.955)
+      (pt -1.525 3.225))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 7.875 -1.605)
+      (pt 7.875 3.225)
+      (pt -2.795 3.225)
+      (pt -2.795 0))))
+   (leg 1 (pt 0 0) (padstack 1))
+   (leg 2 (pt 2.54 0) (padstack 0))
+   (leg 3 (pt 5.08 0) (padstack 0))
+   (padstack 0
+    (hole 1.38)
+    (plated true)
+    (pad (layer TCOP) (round 2.07))
+    (pad (layer INNER) (round 2.07))
+    (pad (layer BCOP) (round 2.07))
+   )
+   (padstack 1
+    (hole 1.38)
+    (plated true)
+    (pad (layer TCOP) (square 2.07))
+    (pad (layer INNER) (round 2.07))
+    (pad (layer BCOP) (square 2.07))
+   )
+   (model "IRLB8748PBF.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

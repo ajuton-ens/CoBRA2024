@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'IRLB8748PBF'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Infineon", "IRLB8748PBF" (!) = "", "TO254P483X1016X1994-3P", "Transistor Outline, Vertical", "942-IRLB8748PBF", "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLB8748PBF?qs=9%252BKlkBgLFf3gv5ktjzjOKQ%3D%3D", "IRLB8748PBF", "https://www.arrow.com/en/products/irlb8748pbf/infineon-technologies-ag?region=europe", "INFINEON - IRLB8748PBF - MOSFET Transistor, N Channel, 40 A, 30 V, 0.0038 ohm, 10 V, 1.8 V", "https://ms.componentsearchengine.com/Datasheets/2/IRLB8748PBF.pdf", "4.83 mm"
+END_PART
+
+END.

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Library_carte_dock")(type "KiCad")(uri "${KIPRJMOD}/Library_carte_dock.kicad_sym")(options "")(descr ""))
+)

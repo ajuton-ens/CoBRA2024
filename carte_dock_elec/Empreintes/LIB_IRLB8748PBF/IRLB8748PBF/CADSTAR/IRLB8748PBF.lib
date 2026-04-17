@@ -1,0 +1,18 @@
+.IRLB8748PBF :1 ;INFINEON - IRLB8748PBF - MOSFET Transistor, N Channel, 40 A, 30 V, 0.0038 ohm, 10 V, 1.8 V
+TO254P483X1016X1994-3P
+*STM Q
+*NGS
+*PLB 1="G" 2="D" 3="S"
+*MXP 3
+*DFN IRLB8748PBF
+~!Manufacturer_Name (Infineon)
+~!Manufacturer_Part_Number (IRLB8748PBF)
+~!Mouser Part Number (942-IRLB8748PBF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLB8748PBF?qs=9%252BKlkBgLFf3gv5ktjzjOKQ%3D%3D)
+~!Arrow Part Number (IRLB8748PBF)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/irlb8748pbf/infineon-technologies-ag?region=europe)
+~!Link Datasheet (https://ms.componentsearchengine.com/Datasheets/2/IRLB8748PBF.pdf)
+~!Height (4.83mm)
+~!3D_Model (IRLB8748PBF)
+IRLB8748PBF
+1.1!U 2.1!U 3.1!U 
