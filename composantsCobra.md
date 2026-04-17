@@ -26,6 +26,6 @@ Accéléromètre : Grove BMI088
 
 Capteur de pression : Adafruit LPS22
 
-magnétometre :PMM350 
+magnétometre :BMM350 
 
 batterie :
