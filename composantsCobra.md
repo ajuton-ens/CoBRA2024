@@ -1,5 +1,10 @@
 #Composants du dirigeable CoBRA
 
+Carte rasberry: PI 5
+
+Camera : -module 3 wide
+         -Svpro  SV-USBGS1200P01-H120 
+
 Moteurs : AS2303 F3P / 3D / 4D 2300KV 17GR T-MOTOR Intermodel 13,75 €
 https://www.intermodel.fr/moteurs-electriques/12387-as2303-f3p-3d-4d-2300kv-17gr-t-motor-t-motor-brushless-moteur-3d-f3p-2300kv-4d-t-motor-as2303.html
 
@@ -15,3 +20,5 @@ https://files.seeedstudio.com/wiki/Grove-TF_Mini_LiDAR/res/SJ-PM-TF-Luna-A03-Pro
 Accéléromètre : Grove BMI088
 
 Capteur de pression : Adafruit LPS22
+
+magnectometre :PMM350 
