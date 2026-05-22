@@ -1,0 +1,17 @@
+Liste des librairies externes utilisées :
+
+  librairies par défault sur python :
+  - time
+  - math
+  - os
+  - json
+  - numpy
+  - threading
+  - socket
+  
+  librairies à installer :
+  - smbus2
+  - cv2
+  - picamera2
+  - apriltags
+  - gpiozero
