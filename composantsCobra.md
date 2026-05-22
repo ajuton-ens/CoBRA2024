@@ -28,4 +28,4 @@ Capteur de pression : Adafruit LPS22
 
 magnétometre :BMM350 
 
-batterie :
+batterie : https://www.conrad.fr/fr/p/reely-pack-de-batterie-lipo-7-4-v-2400-mah-nombre-de-cellules-2-20-c-softcase-xt60-2617748.html
