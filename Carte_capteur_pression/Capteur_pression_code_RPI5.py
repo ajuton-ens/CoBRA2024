@@ -13,9 +13,9 @@ async def main():
     devices = await BleakScanner.discover()
 
     for d in devices:
-        print(d)
 
         if d.name and TARGET_NAME in d.name:
+            print(d)
             print(f"\nConnecting to {d.name} ({d.address})...")
 
             async with BleakClient(d.address) as client:

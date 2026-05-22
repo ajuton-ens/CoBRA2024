@@ -5781,7 +5781,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 97.79 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -5967,7 +5967,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 80.01 80.518 90)
 			(hide yes)
 			(show_name no)

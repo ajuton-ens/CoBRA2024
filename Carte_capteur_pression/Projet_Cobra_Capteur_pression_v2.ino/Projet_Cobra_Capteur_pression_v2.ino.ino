@@ -90,51 +90,59 @@ void setupBLE(float pressure) {
   BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
   pAdvertising->start();
 
-  Serial.println("BLE advertising...");
-  Serial.print("Pressure = ");
-  Serial.println(pressure);
-}
-
-float read_pressure(){
-  float pressure = BARO.readPressure();
+  //Serial.println("BLE advertising...");
   //Serial.print("Pressure = ");
   //Serial.println(pressure);
-  return pressure;
 }
 
-void setup() {
-  Serial.begin(115200);
-  delay(1000);
-  Wire.begin(21, 22);
+//float read_pressure(){
+  //float pressure = BARO.readPressure();
+  //Serial.print("Pressure = ");
+  //Serial.println(pressure);
+  //return pressure;
+//}
 
-  if (!BARO.begin()) {
-    Serial.println("Sensor error");
-    return;
-  }
+void setup() {
+  //Serial.begin(115200);
+  //delay(1000);
+  pinMode(21,OUTPUT); // to turn on/off the LPS22
+  // pinMode(LED_BUILTIN,OUTPUT);
+  Wire.begin(1, 2);
+
+  //if (!BARO.begin()) {
+    //Serial.println("Sensor error");
+    //return;
+  //}
 
   ++bootCount;
-  Serial.println("Boot number: " + String(bootCount));
+  //Serial.println("Boot number: " + String(bootCount));
   
   //Print the wakeup reason for ESP32
-  print_wakeup_reason();
+  //print_wakeup_reason();
 
-  //Appeler la fonction pour lire la pression
+  digitalWrite(21,HIGH); // Turn on the LPS22
+  //digitalWrite(LED_BUILTIN,HIGH); // Allumer la LED
 
-  float pressure = read_pressure();
+  delay(1000); //Délais de 1s
 
-  //read_pressure();
+  BARO.begin(); //Initialisation du baromètre
+  float pressure = BARO.readPressure();   //Lecture du baromètre
+
+  digitalWrite(21,LOW); // Turn off the LPS22
+  //digitalWrite(LED_BUILTIN,LOW); 
 
   // Lancer BLE
   setupBLE(pressure);
 
   // Laisser le temps à la Raspberry de se connecter
-  delay(10000);  // 10 secondes (à ajuster)
+  delay(3000);  // 1 secondes (à ajuster)
+  
+  BLEDevice::deinit(true);
+  esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR); // Commence le Deep Sleep
+  //Serial.println("Setup ESP32 to sleep for every " + String(TIME_TO_SLEEP) + " Seconds");
 
-  esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
-  Serial.println("Setup ESP32 to sleep for every " + String(TIME_TO_SLEEP) + " Seconds");
-
-  Serial.println("Going to sleep now");
-  Serial.flush();
+  //Serial.println("Going to sleep now");
+  //Serial.flush();
   esp_deep_sleep_start();
 }
 
