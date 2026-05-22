@@ -1,0 +1,11 @@
+Le fichier point d'entrée du programme est : main.py
+
+Liste des librairies utilisées :
+  - time
+  - math
+  - tkinter
+  - json
+  - threading
+  - socket
+  - matplotlib
+  - collections
