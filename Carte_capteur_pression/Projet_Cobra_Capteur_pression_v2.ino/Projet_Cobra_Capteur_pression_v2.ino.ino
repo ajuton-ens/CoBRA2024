@@ -106,7 +106,7 @@ void setup() {
   //Serial.begin(115200);
   //delay(1000);
   pinMode(21,OUTPUT); // to turn on/off the LPS22
-  pinMode(LED_BUILTIN,OUTPUT);
+  // pinMode(LED_BUILTIN,OUTPUT);
   Wire.begin(1, 2);
 
   //if (!BARO.begin()) {
@@ -121,7 +121,7 @@ void setup() {
   //print_wakeup_reason();
 
   digitalWrite(21,HIGH); // Turn on the LPS22
-  digitalWrite(LED_BUILTIN,HIGH); // Allumer la LED
+  //digitalWrite(LED_BUILTIN,HIGH); // Allumer la LED
 
   delay(1000); //Délais de 1s
 
@@ -129,7 +129,7 @@ void setup() {
   float pressure = BARO.readPressure();   //Lecture du baromètre
 
   digitalWrite(21,LOW); // Turn off the LPS22
-  digitalWrite(LED_BUILTIN,LOW); 
+  //digitalWrite(LED_BUILTIN,LOW); 
 
   // Lancer BLE
   setupBLE(pressure);
