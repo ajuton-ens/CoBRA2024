@@ -1,5 +1,6 @@
-Liste des librairies externes utilisées :
+Le fichier point d'entrée du programme est : main.py
 
+Liste des librairies externes utilisées :
   librairies par défault sur python :
   - time
   - math
