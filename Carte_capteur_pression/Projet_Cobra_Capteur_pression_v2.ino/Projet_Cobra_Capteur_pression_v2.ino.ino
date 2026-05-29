@@ -19,9 +19,10 @@ Author:
 Pranav Cherukupalli <cherukupallip@gmail.com>
 */
 
+//Pour programmer l'ESP32 : appuyer sur Reset, puis sur Boot tout en maintenant Reset appuyé ; relacher Reset puis relacher Boot
 
 #define uS_TO_S_FACTOR 1000000ULL /* Conversion factor for micro seconds to seconds */
-#define TIME_TO_SLEEP  10          /* Time ESP32 will go to sleep (in seconds) */
+#define TIME_TO_SLEEP  60          /* Time ESP32 will go to sleep (in seconds) */
 
 #include <BLEDevice.h>
 #include <BLEServer.h>
@@ -106,7 +107,7 @@ void setup() {
   //Serial.begin(115200);
   //delay(1000);
   pinMode(21,OUTPUT); // to turn on/off the LPS22
-  // pinMode(LED_BUILTIN,OUTPUT);
+  pinMode(LED_BUILTIN,OUTPUT);
   Wire.begin(1, 2);
 
   //if (!BARO.begin()) {
@@ -121,7 +122,7 @@ void setup() {
   //print_wakeup_reason();
 
   digitalWrite(21,HIGH); // Turn on the LPS22
-  //digitalWrite(LED_BUILTIN,HIGH); // Allumer la LED
+  digitalWrite(LED_BUILTIN,HIGH); // Allumer la LED
 
   delay(1000); //Délais de 1s
 
@@ -129,13 +130,13 @@ void setup() {
   float pressure = BARO.readPressure();   //Lecture du baromètre
 
   digitalWrite(21,LOW); // Turn off the LPS22
-  //digitalWrite(LED_BUILTIN,LOW); 
+  digitalWrite(LED_BUILTIN,LOW); 
 
   // Lancer BLE
   setupBLE(pressure);
 
   // Laisser le temps à la Raspberry de se connecter
-  delay(3000);  // 1 secondes (à ajuster)
+  delay(10000);  // 3 secondes (à ajuster)
   
   BLEDevice::deinit(true);
   esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR); // Commence le Deep Sleep
