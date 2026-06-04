@@ -3533,6 +3533,30 @@
 		)
 		(uuid "03d97c0e-9dbd-475b-9e4f-9804157b9deb")
 	)
+	(rectangle
+		(start 67.31 85.09)
+		(end 130.81 104.14)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "72399fa7-b397-4178-82b2-6a34c684f09b")
+	)
+	(rectangle
+		(start 104.14 113.03)
+		(end 158.75 135.89)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8e8aa181-c97c-48a0-adb1-fd2f06ac9bcd")
+	)
 	(text "Pogo pin\n(interrepteur de détection du ballon)\n"
 		(exclude_from_sim no)
 		(at 135.636 78.232 0)
@@ -3552,6 +3576,16 @@
 			)
 		)
 		(uuid "0aefda40-19a8-4f2d-9219-78cc9d591046")
+	)
+	(text "Electrovanne\n"
+		(exclude_from_sim no)
+		(at 124.206 89.916 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21b2aae7-6ab8-4c9d-a705-64bf8ab5ca41")
 	)
 	(text "Alimentation carte\n"
 		(exclude_from_sim no)
@@ -3620,6 +3654,12 @@
 		(uuid "06ce07cf-0cab-469e-a348-f01d3f289fba")
 	)
 	(junction
+		(at 64.77 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "186f005c-02b3-43a9-92ae-31afb6bae414")
+	)
+	(junction
 		(at 97.79 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3650,6 +3690,12 @@
 		(uuid "c8be6e04-4daf-4170-9841-c08a735b129b")
 	)
 	(junction
+		(at 80.01 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7a3fb08-56e0-4d8e-8471-d996985dfe55")
+	)
+	(junction
 		(at 85.09 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3664,6 +3710,16 @@
 			(type default)
 		)
 		(uuid "035297bd-3b8d-44f6-b3e9-5a76e9340992")
+	)
+	(wire
+		(pts
+			(xy 64.77 97.79) (xy 64.77 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07134157-c521-44f3-9992-57d67a83ec5c")
 	)
 	(wire
 		(pts
@@ -3694,6 +3750,16 @@
 			(type default)
 		)
 		(uuid "1822abce-9c55-4e24-8722-9e49d5439c96")
+	)
+	(wire
+		(pts
+			(xy 77.47 91.44) (xy 87.63 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19ccf6a5-3567-45fc-ae1e-d6ea4dc175a1")
 	)
 	(wire
 		(pts
@@ -3807,6 +3873,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 78.74) (xy 226.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dc36e2d-fc70-458e-89c1-b8e9ecd51816")
+	)
+	(wire
+		(pts
 			(xy 66.04 31.75) (xy 87.63 31.75)
 		)
 		(stroke
@@ -3827,6 +3903,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 100.33) (xy 80.01 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "580be7af-6fcb-4659-bcbf-6c81a0854a20")
+	)
+	(wire
+		(pts
 			(xy 110.49 119.38) (xy 110.49 129.54)
 		)
 		(stroke
@@ -3834,6 +3920,16 @@
 			(type default)
 		)
 		(uuid "592db37e-22c7-46d1-9c6d-036aa8fcb80e")
+	)
+	(wire
+		(pts
+			(xy 87.63 97.79) (xy 64.77 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59a12fe2-7c26-4c9c-9de5-ca9ad2f9e997")
 	)
 	(wire
 		(pts
@@ -3897,6 +3993,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 100.33) (xy 80.01 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a4feaf2-d6cc-4ad9-b169-1fa9ada7c501")
+	)
+	(wire
+		(pts
 			(xy 107.95 127) (xy 107.95 132.08)
 		)
 		(stroke
@@ -3914,6 +4020,16 @@
 			(type default)
 		)
 		(uuid "8f657b02-5019-4c2f-b899-ef6184ddf0db")
+	)
+	(wire
+		(pts
+			(xy 77.47 88.9) (xy 87.63 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "936b1a4e-cfa7-4701-983a-e883ba41f479")
 	)
 	(wire
 		(pts
@@ -3967,7 +4083,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 109.22) (xy 74.93 109.22)
+			(xy 60.96 109.22) (xy 64.77 109.22)
 		)
 		(stroke
 			(width 0)
@@ -4004,6 +4120,16 @@
 			(type default)
 		)
 		(uuid "c17c740b-7fe2-4aa4-a3a2-a28aa287903b")
+	)
+	(wire
+		(pts
+			(xy 64.77 109.22) (xy 74.93 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c291df2b-6b03-475d-af7a-167143650a8d")
 	)
 	(wire
 		(pts
@@ -4064,6 +4190,16 @@
 			(type default)
 		)
 		(uuid "e8d5f861-ba3a-4a24-a639-a3750cb7087f")
+	)
+	(wire
+		(pts
+			(xy 222.25 81.28) (xy 226.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecf7ff8c-2e3e-4ae7-a5e4-24d21bb253b3")
 	)
 	(wire
 		(pts
@@ -4235,6 +4371,30 @@
 			)
 		)
 	)
+	(global_label "PIN16"
+		(shape input)
+		(at 222.25 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "54ea806b-6acf-41a1-b7f4-58b70ec07aed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.6405 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "PIN11"
 		(shape input)
 		(at 246.38 73.66 0)
@@ -4344,6 +4504,30 @@
 		(uuid "7913554e-013a-4a66-959b-6e47cfc40c81")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 59.4867 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "PIN18"
+		(shape input)
+		(at 77.47 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e9a5e26-940e-4e27-9e58-177d715784b8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.8605 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4523,6 +4707,30 @@
 			)
 		)
 	)
+	(global_label "PIN18"
+		(shape input)
+		(at 222.25 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b434afe6-5dd2-41b0-a3d1-3e8ce89aee75")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.6405 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "PIN13"
 		(shape input)
 		(at 246.38 76.2 0)
@@ -4568,6 +4776,114 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "PIN16"
+		(shape input)
+		(at 77.47 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3726641-5dfe-490d-b749-cc433be34b85")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.8605 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Library_carte_elec:1758018")
+		(at 87.63 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00be3caf-a2c5-4b5a-9fec-92af58cb50a9")
+		(property "Reference" "J12"
+			(at 101.6 97.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1758018"
+			(at 101.6 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Librarie_empreinte:CONN_1758018"
+			(at 87.63 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "1758018"
+			(at 87.63 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20e223ef-2a67-44fa-ba59-2aa32cc7bc7d")
+		)
+		(pin "2"
+			(uuid "5d911cb4-ccb3-428e-a032-07906035d9b5")
+		)
+		(instances
+			(project "carte_dock_elec_kicad"
+				(path "/0a41ff7f-8449-4035-8cd1-c89e9854d035"
+					(reference "J12")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6258,6 +6574,90 @@
 			(project "carte_dock_elec_kicad"
 				(path "/0a41ff7f-8449-4035-8cd1-c89e9854d035"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Library_carte_elec:1758018")
+		(at 87.63 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c75af7f9-4d8d-4fd1-b36d-e3863a69e96c")
+		(property "Reference" "J11"
+			(at 101.6 88.8999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1758018"
+			(at 101.6 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Librarie_empreinte:CONN_1758018"
+			(at 87.63 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "1758018"
+			(at 87.63 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8073055-1098-40d2-a2da-24bcffced095")
+		)
+		(pin "2"
+			(uuid "5e5abbd0-5284-4171-8e87-f5885eb9c452")
+		)
+		(instances
+			(project "carte_dock_elec_kicad"
+				(path "/0a41ff7f-8449-4035-8cd1-c89e9854d035"
+					(reference "J11")
 					(unit 1)
 				)
 			)
