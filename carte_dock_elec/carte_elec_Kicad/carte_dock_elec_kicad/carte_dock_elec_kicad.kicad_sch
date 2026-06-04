@@ -4251,6 +4251,16 @@
 		)
 		(uuid "fdb62a43-0b57-429a-8bc8-f64478c52b22")
 	)
+	(wire
+		(pts
+			(xy 238.76 96.52) (xy 247.65 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe714a27-772c-4a87-9bf6-c357f6ad916e")
+	)
 	(global_label "PIN15"
 		(shape input)
 		(at 88.9 140.97 180)
@@ -4515,7 +4525,7 @@
 			)
 		)
 	)
-	(global_label "PIN18"
+	(global_label "PIN16"
 		(shape input)
 		(at 77.47 88.9 180)
 		(fields_autoplaced yes)
@@ -4707,30 +4717,6 @@
 			)
 		)
 	)
-	(global_label "PIN18"
-		(shape input)
-		(at 222.25 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b434afe6-5dd2-41b0-a3d1-3e8ce89aee75")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 213.6405 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "PIN13"
 		(shape input)
 		(at 246.38 76.2 0)
@@ -4779,7 +4765,7 @@
 			)
 		)
 	)
-	(global_label "PIN16"
+	(global_label "PIN29"
 		(shape input)
 		(at 77.47 91.44 180)
 		(fields_autoplaced yes)
@@ -4800,6 +4786,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "PIN29"
+		(shape input)
+		(at 247.65 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fbb1261c-2a04-40a0-a0a0-1fa0e10fc707")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.2595 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
